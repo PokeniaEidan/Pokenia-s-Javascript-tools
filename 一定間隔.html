@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>一定間隔ごとに表示を変えるサンプル</title>
+</head>
+<body>
+<div id="t1"></div>
+<script>
+var 日本語="Javascriptへようこそ"
+var 英語="Welcome to Javascript"
+var speed = 5000
+
+var flag = 0;
+function disp(){
+if(flag == 0){
+document.getElementById("t1").innerHTML = `${日本語}`;
+flag = 1;
+}
+else{
+document.getElementById("t1").innerHTML = `${英語}`;
+flag=0;
+}
+
+setTimeout("disp()", speed);
+}
+disp();
+</script>
+</body>
+</html>
