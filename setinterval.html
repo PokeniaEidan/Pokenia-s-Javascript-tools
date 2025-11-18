@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>setintervalのサンプル</title>
+</head>
+<body>
+<div id="t1">しばらくお待ちください。</div>
+<script src="ボキャブラリー.js"></script>
+<script>
+
+function main(){
+ボキャブラリー();
+var msg=`次の出発　${都市[n]}`;
+
+document.getElementById("t1").innerHTML = `${msg}`;
+}
+
+window.setInterval(main, 5000);
+</script>
+</style>
+</body>
+</html>
