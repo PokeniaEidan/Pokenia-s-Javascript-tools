@@ -9,17 +9,21 @@
 <body>
 <script src="ニュース.js"></script>
 <div class="scroll">
+  <span class="mes2"><input type="button"  value="button" onclick="main()"></span>
+<div class="scroll">
   <span class="mes1"></span>
 </div>
 
 
 
 <script>
-for (let i = 0 ; i < 128 ; i++){
+function main(){
 ボキャブラリー();
 var element = document.getElementsByClassName("mes1");
-    element[0].innerHTML  += i + `　<font color="ffffff"${ニュース本文[ニュース乱数]}</font>　　　　　`;
+    element[0].innerHTML  =`<font color="ffffff">${ニュース本文[ニュース乱数]}</font>`;
 }
+    
+
 </script>
 
 
@@ -27,16 +31,9 @@ var element = document.getElementsByClassName("mes1");
 <style type="text/css">
 
 .scroll span{
-  display     : inline-block;
-    font-size: 72px;
-  padding-left: 100%;
-  white-space : nowrap;
-  line-height : 2em;
-  animation   : scrollAnime 25000s linear infinite ;
+    font-size: 20px;
 }
-@keyframes scrollAnime{
-    0% { transform: translateX(0)}
-  100% { transform: translateX(-100%)}
+
 
 </style>
 
