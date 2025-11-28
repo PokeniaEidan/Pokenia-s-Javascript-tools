@@ -2,12 +2,13 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>サンプル1</title>
+<title>サンプル2</title>
  
 </head>
 <body bgcolor="#19448e">
 <body>
 <script src="ニュース.js"></script>
+<script src="ニュースティッカー.js"></script>
 <div class="scroll">
   <span class="mes1"></span>
 </div>
@@ -17,9 +18,16 @@
 <script>
 for (let i = 0 ; i < 128 ; i++){
 main();
+main2();
+
+mes=[
+`${ニュース本文[ニュース乱数]}`,
+`${ニュースティッカー[ニュースティッカー乱数]}`
+]
+乱数=Math.floor(Math.random() * mes.length);
 
 var element = document.getElementsByClassName("mes1");
-    element[0].innerHTML  += i +`<font color="ffffff">${ニュース本文[ニュース乱数]}　　　　　　　　　</font>`;
+    element[0].innerHTML  += i +`<font color="ffffff">${mes[乱数]}　　　　　　　　　</font>`;
 }
 </script>
 
