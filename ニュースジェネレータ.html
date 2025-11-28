@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>サンプル1</title>
+ 
+</head>
+<body bgcolor="#ffffff">
+<body>
+<script src="ニュース.js"></script>
+  <div class="scroll">
+  <span class="mes2"><input type="button" value="button" onclick="main()"></span>
+<div class="scroll">
+  <span class="mes1"></span>
+</div>
+
+
+
+<script>
+function main(){
+ボキャブラリー();
+
+var element = document.getElementsByClassName("mes1");
+    element[0].innerHTML  =`　${ニュース本文[ニュース乱数]}　　　　　`;
+}
+</script>
+
+</body>
+</html>
