@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>サンプル2</title>
+ </head>
+<body>
+<div id ="asia">
+<label for="出発都市">出発都市</label>
+<select id="出発都市">
+<option value="東京">東京</option>
+<option value="ソウル">ソウル</option>
+<option value="北京">北京</option>
+<option value="香港">香港</option>
+<option value="バンコク">バンコク</option>
+<option value="シンガポール">シンガポール</option>
+<option value="マニラ">マニラ</option>
+</select>
+
+<label for="到着都市">到着都市</label>
+<select id="到着都市">
+<option value="東京">東京</option>
+<option value="大阪">大阪</option>
+<option value="札幌">札幌</option>
+<option value="福岡">福岡</option>
+<option value="ソウル">ソウル</option>
+<option value="北京">北京</option>
+<option value="上海">上海</option>
+<option value="香港">香港</option>
+<option value="台北">台北</option>
+<option value="バンコク">バンコク</option>
+<option value="クアラルンプール">クアラルンプール</option>
+<option value="シンガポール">シンガポール</option>
+<option value="マニラ">マニラ</option>
+<option value="セブ">セブ</option>
+<option value="グアム">グアム</option>
+<option value="サイパン">サイパン</option>
+<option value="ハバロフスク">ハバロフスク</option>
+</select>
+</div>
+
+<div id="t1"></div>
+<div id="t2"></div>
+
+<input type="button" value="Check" onclick="buttonclick()">
+
+<script>
+var element = document.getElementById('出発都市');
+var element = document.getElementById('到着都市');
+var element = document.getElementById('座席数');
+var element = document.getElementById('便数');
+
+function buttonclick(){
+document.getElementById("t1").innerHTML = `${出発都市.value}→${到着都市.value}`;
+
+if (出発都市.value == "東京"){
+出発人口=1760
+出発商業=76
+出発観光=50
+}
+if (出発都市.value == "ソウル"){
+出発人口=1280
+出発商業=82
+出発観光=44
+}
+if (出発都市.value == "北京"){
+出発人口=1400
+出発商業=54
+出発観光=48
+}
+if (出発都市.value == "香港"){
+出発人口=700
+出発商業=82
+出発観光=42
+}
+if (出発都市.value == "バンコク"){
+出発人口=790
+出発商業=70
+出発観光=38
+}
+if (出発都市.value == "シンガポール"){
+出発人口=400
+出発商業=84
+出発観光=40
+}
+if (出発都市.value == "マニラ"){
+出発人口=210
+出発商業=63
+出発観光=34
+}
+
+
+
+if (到着都市.value == "東京"){
+到着人口=1760
+到着商業=76
+到着観光=50
+}
+if (到着都市.value == "大阪"){
+到着人口=1000
+到着商業=76
+到着観光=41
+}
+if (到着都市.value == "福岡"){
+到着人口=560
+到着商業=68
+到着観光=44
+}
+if (到着都市.value == "札幌"){
+到着人口=650
+到着商業=74
+到着観光=64
+}
+if (到着都市.value == "ソウル"){
+到着人口=1280
+到着商業=82
+到着観光=44
+}
+if (到着都市.value == "北京"){
+到着人口=1400
+到着商業=54
+到着観光=48
+}
+if (到着都市.value == "上海"){
+到着人口=1480
+到着商業=82
+到着観光=52
+}
+if (到着都市.value == "香港"){
+到着人口=700
+到着商業=82
+到着観光=42
+}
+if (到着都市.value == "台北"){
+到着人口=310
+到着商業=60
+到着観光=38
+}
+if (到着都市.value == "バンコク"){
+到着人口=790
+到着商業=70
+到着観光=38
+}
+if (到着都市.value == "クアラルンプール"){
+到着人口=100
+到着商業=56
+到着観光=30
+}
+if (到着都市.value == "シンガポール"){
+到着人口=400
+到着商業=84
+到着観光=40
+}
+if (到着都市.value == "マニラ"){
+到着人口=210
+到着商業=63
+到着観光=34
+}
+if (到着都市.value == "セブ"){
+到着人口=90
+到着商業=38
+到着観光=70
+}
+if (到着都市.value == "グアム"){
+到着人口=10
+到着商業=24
+到着観光=80
+}
+if (到着都市.value == "サイパン"){
+到着人口=10
+到着商業=18
+到着観光=75
+}
+if (到着都市.value == "ハバロフスク"){
+到着人口=90
+到着商業=55
+到着観光=38
+}
+//if (到着都市.value == ""){
+//到着人口=
+//到着商業=
+//到着観光=
+//}
+
+
+var 出発需要= (出発人口*出発商業)+(出発人口*出発観光)
+var 到着需要= (到着人口*到着商業)+(到着人口*到着観光)
+var 旅客数= (出発需要+到着需要)/100
+旅客数= Math.trunc(旅客数);
+
+
+if (出発都市.value == 到着都市.value){
+document.getElementById("t2").innerHTML = `値が不正です。`;
+}else{
+document.getElementById("t2").innerHTML = `出発需要・${出発需要}　到着需要・${到着需要}　旅客数・${旅客数}`;
+}
+
+}
+</script>
+</style>
+
+</body>
+</html>
