@@ -6,7 +6,7 @@
 </head>
 <body>
 <font size="24">
-<input type="button" value="button" onclick="mes()">
+<input type="button" value="button" onclick="mes()" id="button">
 <div id="t1"></div>
 </font>
 <script src="ボキャブラリーB.js"></script>
@@ -19,11 +19,17 @@ main();
 
 document.getElementById("t1").innerHTML = `
 ＜本時のニュース＞<br>${ニュース本文[ニュース乱数]}<br>
-  <br>＜本時のピックアップ人物＞...${人物[人物乱数3]}<br>
-  <br>＜本時のピックアップ作品＞...${女性[女性乱数]}と${お宝[お宝乱数]}
+  <br>＜本時のピックアップ人物＞<br>${人物[人物乱数3]}<br>
+  <br>＜本時のピックアップ作品＞<br>${女性[女性乱数]}と${お宝[お宝乱数]}
 `;
 }
 mes();
 </script>
+<style>
+#button{
+width: 10em;
+height:3em;
+}
+</style>
 </body>
 </html>
