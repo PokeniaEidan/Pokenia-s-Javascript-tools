@@ -13,16 +13,13 @@
 <script>
 ボキャブラリー();
 main();
+
 let randomValue = localStorage.getItem("myRandom");
 
 if (randomValue === null) {
   randomValue = `
   ＜本時のニュース＞<br>${ニュース本文[ニュース乱数]}<br>
-  <br>＜本時の標語＞<br>
-  <br>＜本時の一言＞<br>
-  <br>＜本時のひとりごと＞<br>
-  <br>＜本時の占い＞<br>
-  <br>＜本時のピックアップ作品＞...${女性[女性乱数]}と${お宝[お宝乱数]}<br>
+  <br>＜本時のピックアップ作品＞<br>${女性[女性乱数]}と${お宝[お宝乱数2]}<br>
   `;
 
   localStorage.setItem("myRandom", randomValue);
