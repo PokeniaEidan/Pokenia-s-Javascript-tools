@@ -389,6 +389,7 @@ function ボキャブラリー(){
 人物乱数2=Math.floor(Math.random() * 人物.length);
 人物乱数3=Math.floor(Math.random() * 人物.length);
 
+
 女性=[
 `神尾観鈴`,
 `霧島佳乃`,
@@ -412,7 +413,6 @@ function ボキャブラリー(){
 `波多乃神奈`,
 `武田絵里子`,
 `高市早苗`,
-`朴槿恵`,
 `小野かのこ`
 ]
 女性乱数=Math.floor(Math.random() * 女性.length);
