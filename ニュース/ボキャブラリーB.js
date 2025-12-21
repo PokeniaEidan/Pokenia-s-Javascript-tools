@@ -390,8 +390,8 @@ function ボキャブラリー(){
 人物乱数=Math.floor(Math.random() * 人物.length);
 人物乱数2=Math.floor(Math.random() * 人物.length);
 人物乱数3=Math.floor(Math.random() * 人物.length);
+人物乱数F=Math.floor(Math.random() * 人物.length);
 
-絶好調=Math.floor(Math.random() * 人物.length);
 
 男性=[
 `石破茂`,
@@ -499,5 +499,20 @@ function ボキャブラリー(){
 ]
 汚れ役乱数=Math.floor(Math.random() * 汚れ役.length);
 汚れ役乱数2=Math.floor(Math.random() * 汚れ役.length);
+
+ラッキー=[
+`本時のラッキー食べ物は...「${食べ物[食べ物乱数F]}」！`,
+`本時のラッキースイーツは...「${スイーツ[スイーツ乱数]}」！`,
+`本時のラッキードリンクは...「${ドリンク[ドリンク乱数]}」！`,
+`本時のラッキーアイテムは...「${お宝[お宝乱数F]}」！`,
+`本時のラッキー人物は...「${人物[人物乱数F]}」！`,
+]
+ラッキー乱数=Math.floor(Math.random() * ラッキー.length);
+
+占い=[
+`プラスの結果になるかも！<br>そんなアナタに　幸せを招く${ラッキー[ラッキー乱数]}`,
+`マイナスの結果になるかも！<br>そんなアナタを　トラブルから守る${ラッキー[ラッキー乱数]}`,
+]
+占い乱数=Math.floor(Math.random() * 占い.length);
 
 }
