@@ -468,6 +468,7 @@ function ボキャブラリー(){
 `小野かのこ`
 ]
 女性乱数=Math.floor(Math.random() * 女性.length);
+女性乱数2=Math.floor(Math.random() * 女性.length);
 
 汚れ役=[
 `TDN`,
