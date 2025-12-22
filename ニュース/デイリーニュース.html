@@ -35,7 +35,8 @@ const button = document.getElementById("dailyButton");
 
 // 今日の日付（YYYY-MM-DD）
 //const today = new Date().toISOString().split("T")[0];
-const today = new Date().toString().split(":")[0];
+//const today = new Date().toString().split(":")[0];
+const today = new Date().toString().slice(0, 20);
 
 // 保存されている日付を取得
 const lastClickedDate = localStorage.getItem("lastClickedDate");
@@ -55,6 +56,8 @@ button.addEventListener("click", () => {
   localStorage.removeItem('myRandom');
   location.reload()
 });
+
+
 </script>
 <style>
 #t1{
