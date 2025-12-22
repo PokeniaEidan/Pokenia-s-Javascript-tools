@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Pokenia's Javascript Tools</title>
+</head>
+<body bgcolor="#001e43">
+<marquee id="t1" bgcolor="#000000" scrollamount="8"></marquee>
+<script src="ニュースティッカー.js"></script>
+<script src="ボキャブラリーB.js"></script>
+<script>
+
+for (var i = 0; i < 256; i++) {
+ボキャブラリー();
+main();
+
+document.getElementById("t1").innerHTML += i+ `　${ニュース本文[ニュース乱数]}　　　　　`;
+}
+
+</script>
+<style>
+#t1{
+white-space: nowrap;
+font-size: 1.5em;
+color: #ed6d35;
+}
+</style>
+</body>
+</html>
