@@ -9,10 +9,12 @@
 <div id="t1"></div>
 <div id="t2"></div>
 <script src="ボキャブラリーB.js"></script>
+<script src="駅.js"></script>
 <script src="ニュースティッカー.js"></script>
 <script>
 ボキャブラリー();
 main();
+駅();
 
 let randomValue = localStorage.getItem("myRandom");
 
@@ -21,6 +23,7 @@ if (randomValue === null) {
 ＜本時のニュース＞<br>${ニュース本文[ニュース乱数]}<br>
 <br>＜本時の占い＞<br>${占い[占い乱数]}<br>
 <br>＜本時のピックアップ作品＞<br>${女性[女性乱数2]}と${お宝[お宝乱数2]}<br>
+<br>＜本時のピックアップ駅＞<br>${駅名[駅乱数]}<br>
   `;
 
   localStorage.setItem("myRandom", randomValue);
