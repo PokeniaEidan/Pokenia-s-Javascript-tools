@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Pokenia's Javascript Tools</title>
+</head>
+<body>
+<input type="button" value="もういちど" onclick="mes()" id="button">
+<div id="t1"></div>
+<div id="t2"></div>
+
+<script src="ボキャブラリーB.js"></script>
+<script src="駅.js"></script>
+<script src="提案.js"></script>
+<script>
+function mes(){
+ボキャブラリー();
+teian();
+文章=提案
+document.getElementById("t1").innerHTML = `${文章}`
+}
+mes();
+
+</script>
+<style>
+#button{
+width: 10em;
+height:5em;
+}
+#t1{
+font-size: 1.2em;
+-webkit-text-size-adjust: none;
+}
+</style>
+</body>
+</html>
