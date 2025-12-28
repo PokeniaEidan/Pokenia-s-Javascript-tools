@@ -480,6 +480,8 @@ if(人物[人物乱数]==人物[人物乱数2] ||  人物[人物乱数]==人物[
 //`武田絵里子`,
 //`高市早苗`,
 `小野かのこ`
+`小野かのこ`
+`小野かのこ`
 ]
 女性乱数=Math.floor(Math.random() * 女性.length);
 女性乱数2=Math.floor(Math.random() * 女性.length);
@@ -514,6 +516,7 @@ if(人物[人物乱数]==人物[人物乱数2] ||  人物[人物乱数]==人物[
 ]
 汚れ役乱数=Math.floor(Math.random() * 汚れ役.length);
 汚れ役乱数2=Math.floor(Math.random() * 汚れ役.length);
+
 
 
 }
