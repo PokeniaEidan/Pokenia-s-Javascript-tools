@@ -11,20 +11,18 @@
 <script src="ボキャブラリーB.js"></script>
 <script src="ニュース差分.js"></script>
 <script src="駅.js"></script>
-<script src="提案.js"></script>
 <script src="ニュースティッカー.js"></script>
 <script>
 ボキャブラリー();
 main();
 station();
-teian();
 
 let randomValue = localStorage.getItem("myRandom");
 
 if (randomValue === null) {
   randomValue = `
 ＜本時のニュース＞<br>${ニュース本文[ニュース乱数]}<br>
-<br>＜本時の提案＞<br>${提案}<br>
+<br>＜本時の提案＞<br>${女性[5]}さんと${首都圏[首都圏乱数]}から${首都圏[首都圏乱数2]}まで移動しよう<br>
 <br>＜本時のピックアップ作品＞<br>${女性[女性乱数2]}と${お宝[お宝乱数2]}<br>
 <br>＜本時のピックアップ駅＞<br>${メトロ[メトロ乱数]}<br>
   `;
