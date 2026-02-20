@@ -4,39 +4,53 @@
 <meta charset="UTF-8">
 <title>Pokenia's Javascript Tools</title>
 </head>
-<body bgcolor="#000000">
+<input type="button" value="button" onclick="mes()" id="button">
 <div id="t1"></div>
+
+<div id="count">
+<input type="button" value="-" onclick="マイナス()" id="button">
+<input type="button" value="+" onclick="プラス()" id="button">
+</div>
+
+<div id="t2"></div>
+
+
+
 <script src="ボキャブラリー・島.js"></script>
 <script src="ボキャブラリー・村.js"></script>
 <script src="ボキャブラリー・人物.js"></script>
 <script src="ニュース差分.js"></script>
 <script src="スクロール.js"></script>
 <script>
-for (let i = 1; i < 128; i++){
+let num=0
+
+function mes(){
 main();
-document.getElementById("t1").innerHTML += i +`　${ニュース本文[ニュース乱数]}　　　　　`
+document.getElementById("t1").innerHTML=`${ニュース本文[num]}`
 }
+
+mes();
+
+function プラス(){
+num++
+document.getElementById("t2").innerHTML = `${num}`
+}
+
+function マイナス(){
+num--
+document.getElementById("t2").innerHTML = `${num}`
+}
+
 </script>
 </body>
 <style>
-#t1{
-font-size: 64px;
-color: #f39700;
-display: inline-block;
-padding-left: 100%;
-white-space: nowrap;
-line-height : 2em;
-animation   : scrollAnime 2500s linear infinite ;
+#button{
+width: 10em;
+height:5em;
 }
-@keyframes scrollAnime{
-    0% { transform: translateX(0)}
-  100% { transform: translateX(-100%)}
+#t1{
+font-size: 1.2em;
+-webkit-text-size-adjust: none;
+}
 </style>
 </html>
-
-
-
-
-
-
-
