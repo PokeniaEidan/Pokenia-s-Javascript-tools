@@ -5,6 +5,7 @@
 <title>Pokenia's Javascript Tools</title>
 </head>
 <div id="t1"></div>
+<input type="button" value="button" onclick="disp()" id="button">
 
 <script src="ボキャブラリー・島.js"></script>
 <script src="ボキャブラリー・村.js"></script>
@@ -18,13 +19,16 @@ main();
 document.getElementById("t1").innerHTML =`　${ニュース本文[ニュース乱数]}　　　　　`
 }
 disp();
-window.setInterval(disp, 10000);
 </script>
 </body>
 <style>
 #t1{
-font-size: 1.2em;
+font-size: 20px;
 -webkit-text-size-adjust: none;
+}
+#button{
+width: 10em;
+height:5em;
 }
 </style>
 </html>
