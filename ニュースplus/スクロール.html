@@ -14,11 +14,22 @@
 <script src="ニュース差分.js"></script>
 <script src="スクロール.js"></script>
 <script>
+let element = document.getElementById("t1");
+
+
 function disp(){
+var random=""
+for (let i = 1; i < 129; i++){
 main();
-document.getElementById("t1").innerHTML =`　${ニュース本文[ニュース乱数]}　　　　　`
+random += i +`　${ニュース本文[ニュース乱数]}<br><br>`
+
+}
+document.getElementById("t1").innerHTML=random;
+
+window.scrollTo({top: 0,})
 }
 disp();
+
 </script>
 </body>
 <style>
