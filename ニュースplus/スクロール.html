@@ -5,7 +5,7 @@
 <title>Pokenia's Javascript Tools</title>
 </head>
 <div id="t1"></div>
-<input type="button" value="button" onclick="disp()" id="button">
+<body bgcolor="#000000">
 
 <script src="ボキャブラリー・島.js"></script>
 <script src="ボキャブラリー・村.js"></script>
@@ -14,32 +14,27 @@
 <script src="ニュース差分.js"></script>
 <script src="スクロール.js"></script>
 <script>
-let element = document.getElementById("t1");
-
-
-function disp(){
-var random=""
-for (let i = 1; i < 129; i++){
+for (let i = 1; i < 128; i++){
 main();
-random += i +`　${ニュース本文[ニュース乱数]}<br><br>`
-
+document.getElementById("t1").innerHTML += i +`　${ニュース本文[ニュース乱数]}　　　　　`
 }
-document.getElementById("t1").innerHTML=random;
 
-window.scrollTo({top: 0,})
-}
-disp();
+</script>
 
 </script>
 </body>
 <style>
 #t1{
-font-size: 20px;
--webkit-text-size-adjust: none;
+font-size: 64px;
+color: #f39700;
+display: inline-block;
+padding-left: 100%;
+white-space: nowrap;
+line-height : 2em;
+animation   : scrollAnime 3000s linear infinite ;
 }
-#button{
-width: 10em;
-height:5em;
-}
+@keyframes scrollAnime{
+    0% { transform: translateX(0)}
+  100% { transform: translateX(-100%)}
 </style>
 </html>
