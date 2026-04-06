@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Pokenia's Javascript Tools</title>
+</head>
+<input type="button" value="button" onclick="mes()" id="button">
+<div id="t1"></div>
+
+<script src="ボキャブラリー・島.js"></script>
+<script src="ボキャブラリー・村.js"></script>
+<script src="ボキャブラリー・人物.js"></script>
+<script src="ボキャブラリー・街.js"></script>
+<script src="ボキャブラリー・その他.js"></script>
+<script src="ニュース差分.js"></script>
+<script src="スクロール.js"></script>
+<script>
+function mes(){
+main();
+document.getElementById("t1").innerHTML =`${ニュース本文[ニュース乱数]}`
+}
+
+mes();
+</script>
+</body>
+<style>
+</style>
+</html>

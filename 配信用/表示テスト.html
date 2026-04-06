@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Pokenia's Javascript Tools</title>
+</head>
+<body>
+<input type="button" value="button" onclick="mes()" id="button">
+<div id="t1"></div>
+
+<div id="t2">
+<select id="count">
+<option value="${食べ物[食べ物乱数]}投げつけ事件">${食べ物[食べ物乱数]}投げつけ事件</option>
+<option value="${ランキング[ランキング乱数][0]}は誰？">${ランキング[ランキング乱数][0]}は誰？</option>
+<option value="${食べ物[食べ物乱数]}メーカー発売">${食べ物[食べ物乱数]}メーカー発売</option>
+<option value="新味ミックスジュース発表">新味ミックスジュース発表</option>
+</select>
+</div>
+
+
+<script src="ボキャブラリー・島.js"></script>
+<script src="ボキャブラリー・村.js"></script>
+<script src="ボキャブラリー・人物.js"></script>
+<script src="ボキャブラリー・街.js"></script>
+<script src="ボキャブラリー・その他.js"></script>
+<script src="ニュース差分.js"></script>
+<script src="スクロール.js"></script>
+<script>
+let num=2
+
+function mes(){
+
+let element = document.getElementById("count");
+switch (element.value){
+
+case "${食べ物[食べ物乱数]}投げつけ事件":
+num=2
+break;
+
+case "${ランキング[ランキング乱数][0]}は誰？":
+num=3
+break;
+
+case "${食べ物[食べ物乱数]}メーカー発売":
+num=0
+break;
+
+case "新味ミックスジュース発表":
+num=1
+break;
+
+}
+
+
+main();
+document.getElementById("t1").innerHTML =`${ニュース本文[num]}`
+}
+
+mes();
+</script>
+<style>
+#button{
+width: 10em;
+height:5em;
+}
+#t1{
+font-size: 20px;
+-webkit-text-size-adjust: none;
+}
+#t2{
+-webkit-text-size-adjust: none;
+}
+</style>
+</body>
+</html>
