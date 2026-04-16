@@ -97,6 +97,8 @@ function 人物リスト(){
 `小野かのこ`,
 `小野かのこ`,
 ]
+
+
 人物乱数=Math.floor(Math.random() * 人物.length);
 人物乱数2=Math.floor(Math.random() * 人物.length);
 人物乱数3=Math.floor(Math.random() * 人物.length);
