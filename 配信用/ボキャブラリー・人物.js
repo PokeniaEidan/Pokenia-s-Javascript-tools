@@ -1,6 +1,6 @@
-function 人物リスト(){
+function 人物関数(){
 
-人物=[
+人物リスト=[
 `国崎往人`,
 `神尾観鈴`,
 `霧島佳乃`,
@@ -27,15 +27,19 @@ function 人物リスト(){
 
 
 
-人物乱数=Math.floor(Math.random() * 人物.length);
-人物乱数2=Math.floor(Math.random() * 人物.length);
-人物乱数3=Math.floor(Math.random() * 人物.length);
+人物乱数=Math.floor(Math.random() * 人物リスト.length);
+人物乱数2=Math.floor(Math.random() * 人物リスト.length);
+人物乱数3=Math.floor(Math.random() * 人物リスト.length);
 
-if(人物[人物乱数]==人物[人物乱数2] ||  人物[人物乱数]==人物[人物乱数3] || 人物[人物乱数2]==人物[人物乱数3]){
-人物リスト();
+if(人物リスト[人物乱数]==人物リスト[人物乱数2] ||  人物リスト[人物乱数]==人物リスト[人物乱数3] || 人物リスト[人物乱数2]==人物リスト[人物乱数3]){
+人物関数();
 }
 
-男性=[
+人物=`<font color="khaki ">${人物リスト[人物乱数]}</font>`
+
+
+
+男性リスト=[
 `石破茂`,
 `岸田文雄`,
 `菅義偉`,
@@ -92,42 +96,33 @@ if(人物[人物乱数]==人物[人物乱数2] ||  人物[人物乱数]==人物[
 `鄧小平`,
 `習近平`,
 ]
-男性乱数=Math.floor(Math.random() * 男性.length);
-男性乱数2=Math.floor(Math.random() * 男性.length);
-男性乱数3=Math.floor(Math.random() * 男性.length);
 
-if(男性[男性乱数]==男性[男性乱数2] ||  男性[男性乱数]==男性[男性乱数3] || 男性[男性乱数2]==男性[男性乱数3]){
-人物リスト();
+男性乱数=Math.floor(Math.random() * 男性リスト.length);
+男性乱数2=Math.floor(Math.random() * 男性リスト.length);
+男性乱数3=Math.floor(Math.random() * 男性リスト.length);
+
+
+if(男性リスト[男性乱数]==男性リスト[男性乱数2] ||  男性リスト[男性乱数]==男性リスト[男性乱数3] || 男性リスト[男性乱数2]==男性リスト[男性乱数3]){
+人物関数();
 }
 
-if(男性[男性乱数]==人物[人物乱数]){
-人物リスト();
-}
+男性=`<font color=lightblue >${男性リスト[男性乱数]}</font>`
+男性2=`<font color=lightblue >${男性リスト[男性乱数2]}</font>`
 
 
-女性=[
+
+女性リスト=[
 `神尾観鈴`,
 `古河渚`,
 `藤林杏`,
 `小野かのこ`,
 ]
-女性乱数=Math.floor(Math.random() * 女性.length);
+女性乱数=Math.floor(Math.random() * 女性リスト.length);
 
-汚れ役=[
-//`TDN`,
-//`DB`,
-//`HTN`,
-//`TNOK`,
-//`田所浩二`,
-//`遠野`,
-//`MUR`,
-//`KMR`,
+女性=`<font color=pink>${女性リスト[女性乱数]}</font>`
+
+汚れ役リスト=[
 `虐待おじさん`,
-//`KBTIT`,
-//`平野源五郎`,
-//`ひで`,
-//`我修院`,
-//`じゅんぺい`,
 `関西クレーマー`,
 `課長`,
 `ガバ穴ダディー`,
@@ -138,15 +133,13 @@ if(男性[男性乱数]==人物[人物乱数]){
 `クチマン爺`,
 `うんち提案おじさん`,
 `77歳の肛門モロ感の親爺`,
-//`コブラ三木谷`,
 `淫乱テディベア`
 ]
-汚れ役乱数=Math.floor(Math.random() * 汚れ役.length);
-汚れ役乱数2=Math.floor(Math.random() * 汚れ役.length);
+汚れ役乱数=Math.floor(Math.random() * 汚れ役リスト.length);
 
-if(汚れ役[汚れ役乱数]==汚れ役[汚れ役乱数2]){
-人物リスト();
-}
+汚れ役=`<font color="wheat ">${汚れ役リスト[汚れ役乱数]}</font>`
+
+
 
 差分=[
 `小野かのこ`,
@@ -160,16 +153,20 @@ if(汚れ役[汚れ役乱数]==汚れ役[汚れ役乱数2]){
 ]
 差分乱数=Math.floor(Math.random() * 差分.length);
 
-ランキング=人物.concat(男性,差分)
+ランキング=人物リスト.concat(男性リスト,差分)
 ランキング乱数=Math.floor(Math.random() * ランキング.length);
 ランキング乱数2=Math.floor(Math.random() * ランキング.length);
 ランキング乱数3=Math.floor(Math.random() * ランキング.length);
 
 if(ランキング[ランキング乱数]==ランキング[ランキング乱数2] ||  ランキング[ランキング乱数]==ランキング[ランキング乱数3] || ランキング[ランキング乱数2]==ランキング[ランキング乱数3]){
-人物リスト();
+人物関数();
 }
 
-固定="小野かのこ"
+ランキング1=`<font color=gold >${ランキング[ランキング乱数]}</font>`
+ランキング2=`<font color=silver >${ランキング[ランキング乱数2]}</font>`
+ランキング3=`<font color=goldenrod >${ランキング[ランキング乱数3]}</font>`
+
+
 
 
 }

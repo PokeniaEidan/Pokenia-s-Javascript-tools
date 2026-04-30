@@ -1,13 +1,6 @@
 function その他(){
-数字=[
-`810`,
-`1919`,
-`114514`,
-`364364`,
-]
-数字乱数=Math.floor(Math.random() * 数字.length);
 
-流体=[
+流体リスト=[
 `原油`,
 `フッ素`,
 `リチウム塩水`,
@@ -20,7 +13,9 @@ function その他(){
 `電解液`,
 `アンモニア`,
 ]
-流体乱数=Math.floor(Math.random() * 流体.length);
+流体乱数=Math.floor(Math.random() * 流体リスト.length);
+
+流体=`<font color="lightcoral ">${流体リスト[流体乱数]}</font>`
 
 バス=[
 ["渋谷駅","新橋駅"],
@@ -47,6 +42,9 @@ function その他(){
 ["早稲田","上野松坂屋"],
 ]
 バス乱数=Math.floor(Math.random() * バス.length);
+
+busfrom=`<font color="springgreen ">${バス[バス乱数][0]}</font>`
+busto=`<font color="springgreen ">${バス[バス乱数][1]}</font>`
 
 航空=[
 ["東京","メルボルン"],
@@ -95,5 +93,8 @@ function その他(){
 ["東京","ハノイ"],
 ]
 航空乱数=Math.floor(Math.random() * 航空.length);
+
+airfrom=`<font color="springgreen" >${航空[航空乱数][0]}</font>`
+airto=`<font color="springgreen" >${航空[航空乱数][1]}</font>`
 
 }

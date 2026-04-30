@@ -1,6 +1,6 @@
 function 村(){
 
-飲み物=[
+飲み物リスト=[
 `コーヒー`,
 `アイスコーヒー`,
 `カフェオレ`,
@@ -37,7 +37,9 @@ function 村(){
 `くさった牛乳`
 ]
 
-飲み物乱数=Math.floor(Math.random() * 飲み物.length);
+飲み物乱数=Math.floor(Math.random() * 飲み物リスト.length);
+
+飲み物=`<font color=orange>${飲み物リスト[飲み物乱数]}</font>`
 
 アイテム=[
 `えんぴつ`,

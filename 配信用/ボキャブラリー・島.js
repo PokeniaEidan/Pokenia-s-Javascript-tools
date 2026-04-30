@@ -1,6 +1,6 @@
 function 島(){
 
-食べ物=[
+食べ物リスト=[
 `鮎の塩焼き`,
 `いくら`,
 `いなり寿司`,
@@ -153,12 +153,14 @@ function 島(){
 `ロールキャベツ`,
 ]
 
-食べ物乱数=Math.floor(Math.random() * 食べ物.length);
-食べ物乱数2=Math.floor(Math.random() * 食べ物.length);
-食べ物乱数3=Math.floor(Math.random() * 食べ物.length);
+食べ物乱数=Math.floor(Math.random() * 食べ物リスト.length);
+食べ物乱数2=Math.floor(Math.random() * 食べ物リスト.length);
+食べ物乱数3=Math.floor(Math.random() * 食べ物リスト.length);
+
+食べ物=`<font color="orange ">${食べ物リスト[食べ物乱数]}</font>`
 
 
-お宝=[
+お宝リスト=[
 `ＩＣチップ`,
 `赤い糸`,
 `アヒルのおもちゃ`,
@@ -294,8 +296,10 @@ function 島(){
 `レシート`,
 //`ロボット`
 ]
-お宝乱数=Math.floor(Math.random() * お宝.length);
-お宝乱数2=Math.floor(Math.random() * お宝.length);
-お宝乱数F=Math.floor(Math.random() * お宝.length);
+お宝乱数=Math.floor(Math.random() * お宝リスト.length);
+お宝乱数2=Math.floor(Math.random() * お宝リスト.length);
+お宝乱数F=Math.floor(Math.random() * お宝リスト.length);
+
+お宝=`<font color="orange ">${お宝リスト[お宝乱数]}</font>`
 
 }
