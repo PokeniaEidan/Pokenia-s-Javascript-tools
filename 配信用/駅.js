@@ -902,8 +902,9 @@ function station(){
 ]
 首都圏乱数=Math.floor(Math.random()*首都圏.length);
 首都圏乱数2=Math.floor(Math.random()*首都圏.length);
+首都圏乱数3=Math.floor(Math.random()*首都圏.length);
 
-if(首都圏[首都圏乱数]==首都圏[首都圏乱数2]){
+if(首都圏[首都圏乱数]==首都圏[首都圏乱数2] ||  首都圏[首都圏乱数]==首都圏[首都圏乱数3] || 首都圏[首都圏乱数2]==首都圏[首都圏乱数3]){
 station();
 }
 
