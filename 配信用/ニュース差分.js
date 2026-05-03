@@ -37,11 +37,13 @@ station();
 えんぴつ乱数=Math.floor(Math.random() * えんぴつ.length);
 
 立てこもり=[
-`歯医者に行きたくなかった`,
-`髪を切りすぎたので、外に出たくなかった`,
-`録画していたドラマを一気に見たかったので、部屋から出たくなかった`,
+`<font color="lightcoral ">歯医者に行きたくなかった</font>`,
+`<font color="lightcoral ">髪を切りすぎたので、外に出たくなかった</font>`,
+`<font color="lightcoral ">録画していたドラマを一気に見たかったので、部屋から出たくなかった</font>`,
 ]
 立てこもり乱数=Math.floor(Math.random() * 立てこもり.length);
+
+
 
 ネタリスト=[
 `相対性健康論`,
