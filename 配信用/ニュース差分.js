@@ -1,8 +1,8 @@
 function ニュース差分(){
 人物関数();
 食べ物関数();
-村();
 アイテム関数();
+村();
 その他();
 station();
 
@@ -11,6 +11,18 @@ station();
 [`${男性}`,`${人物}`],
 ]
 ペア乱数=Math.floor(Math.random() * ペア.length);
+
+対立=[
+`もっともまずい料理`,
+`体を洗う順番`,
+]
+対立乱数=Math.floor(Math.random() * 対立.length);
+
+映画感想=[
+`ラストシーンでものすごく号泣した`,
+`ギャグシーンとシリアスなシーンの落差が秀逸だった`,
+]
+映画感想乱数=Math.floor(Math.random() * 映画感想.length);
 
 落とし物=[
 `うちの家宝なので助かった`,
@@ -24,5 +36,11 @@ station();
 ]
 えんぴつ乱数=Math.floor(Math.random() * えんぴつ.length);
 
+立てこもり=[
+`<font color="lightcoral ">歯医者に行きたくなかった</font>`,
+`<font color="lightcoral ">髪を切りすぎたので、外に出たくなかった</font>`,
+`<font color="lightcoral ">録画していたドラマを一気に見たかったので、部屋から出たくなかった</font>`,
+]
+立てこもり乱数=Math.floor(Math.random() * 立てこもり.length);
 
 }
