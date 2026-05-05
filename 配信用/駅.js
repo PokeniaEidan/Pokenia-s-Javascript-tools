@@ -940,11 +940,26 @@ function station(){
 `千葉ニュータウン中央`,
 `印西牧の原`,
 `印旛日本医大`,
+//
+//
+//
+`川口元郷`,
+`南鳩ヶ谷`,
+`鳩ヶ谷`,
+`新井宿`,
+`戸塚安行`,
+`浦和美園`,
 ]
 首都圏乱数=Math.floor(Math.random()*首都圏.length);
+首都圏乱数2=Math.floor(Math.random()*首都圏.length);
 
+if(首都圏[首都圏乱数]==首都圏[首都圏乱数2]){
+station();
+}
 
 駅名=`<font color="springgreen">${首都圏[首都圏乱数]}駅</font>`
+駅名2=`<font color="springgreen">${首都圏[首都圏乱数2]}駅</font>`
+地名=`<font color="springgreen">${首都圏[首都圏乱数]}</font>`
 
 }
 

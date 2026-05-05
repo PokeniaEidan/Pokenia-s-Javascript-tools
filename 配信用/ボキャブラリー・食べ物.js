@@ -158,5 +158,6 @@ function 食べ物関数(){
 食べ物乱数3=Math.floor(Math.random() * 食べ物リスト.length);
 
 食べ物=`<font color="orange ">${食べ物リスト[食べ物乱数]}</font>`
+食べ物2=`<font color="orange ">${食べ物リスト[食べ物乱数2]}</font>`
 
 }
