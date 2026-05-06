@@ -12,6 +12,14 @@ station();
 ]
 ペア乱数=Math.floor(Math.random() * ペア.length);
 
+お宝・食べ物リスト=[
+`${食べ物}`,
+`${お宝2}`,
+]
+お宝・食べ物乱数=Math.floor(Math.random() * お宝・食べ物リスト.length);
+
+食べ物・お宝=`<font color="orange ">${お宝・食べ物リスト[お宝・食べ物乱数]}</font>`
+
 
 映画感想=[
 `ラストシーンでものすごく号泣した`,
