@@ -16,26 +16,22 @@
 <script src="ニュース差分.js"></script>
 <script src="スクロール.js"></script>
 <script>
-for (let i = 1; i < 128; i++){
+function disp(){
 main();
-document.getElementById("t1").innerHTML += i +`　${ニュース本文[ニュース乱数]}　　　　　`
+document.getElementById("t1").innerHTML =`${ニュース本文[ニュース乱数]}`
 }
+
+disp();
+window.setInterval(disp,15000)
 
 </script>
 </body>
 <style>
 #t1{
-font-size: 64px;
+font-size: 20px;
 color: white;
-display: inline-block;
-padding-left: 100%;
-white-space: nowrap;
-line-height : 2em;
-animation   : scrollAnime 3200s linear infinite ;
+-webkit-text-size-adjust: none;
 }
-@keyframes scrollAnime{
-    0% { transform: translateX(0)}
-  100% { transform: translateX(-100%)}
 </style>
 </html>
 
