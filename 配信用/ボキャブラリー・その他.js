@@ -1,5 +1,7 @@
 function その他(){
 
+
+
 流体リスト=[
 `原油`,
 `フッ素`,
@@ -16,7 +18,5 @@ function その他(){
 流体乱数=Math.floor(Math.random() * 流体リスト.length);
 
 流体=`<font color="lightcoral ">${流体リスト[流体乱数]}</font>`
-
-
 
 }

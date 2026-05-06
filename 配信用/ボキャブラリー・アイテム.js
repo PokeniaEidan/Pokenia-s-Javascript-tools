@@ -169,8 +169,14 @@ function アイテム関数(){
 `使い捨てカメラ`,
 ]
 アイテム乱数=Math.floor(Math.random() * アイテム.length);
+アイテム乱数2=Math.floor(Math.random() * アイテム.length);
+
+if(アイテム[アイテム乱数]==アイテム[アイテム乱数2]){
+アイテム関数();
+}
 
 お宝=`<font color="orange ">${アイテム[アイテム乱数]}</font>`
+お宝2=`<font color="orange ">${アイテム[アイテム乱数2]}</font>`
 
 
 }
