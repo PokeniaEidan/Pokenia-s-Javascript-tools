@@ -88,6 +88,7 @@ if(男性リスト[男性乱数]==男性リスト[男性乱数2] ||  男性リ�
 
 男性=`<font color=lightblue >${男性リスト[男性乱数]}</font>`
 男性2=`<font color=lightblue >${男性リスト[男性乱数2]}</font>`
+男性3=`<font color=lightblue >${男性リスト[男性乱数3]}</font>`
 
 
 
