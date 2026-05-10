@@ -13,11 +13,13 @@
 <script src="ボキャブラリー・アイテム.js"></script>
 <script src="ボキャブラリー・その他.js"></script>
 <script src="駅.js"></script>
+<script src="自治体.js"></script>
 <script src="ニュース差分.js"></script>
 <script src="スクロール.js"></script>
 <script>
 function disp(){
 main();
+
 document.getElementById("t1").innerHTML =`${ニュース本文[ニュース乱数]}`
 }
 
@@ -28,7 +30,7 @@ window.setInterval(disp,15000)
 </body>
 <style>
 #t1{
-font-size: 32px;
+font-size: 20px;
 color: white;
 -webkit-text-size-adjust: none;
 }

@@ -10,6 +10,7 @@
 <div id="count">
 <input type="button" value="-" onclick="マイナス()" id="button">
 <input type="button" value="+" onclick="プラス()" id="button">
+<input type="button" value="ジャンプ" onclick="事件()" id="button">
 </div>
 
 <div id="t2"></div>
@@ -23,6 +24,7 @@
 <script src="ボキャブラリー・アイテム.js"></script>
 <script src="ボキャブラリー・その他.js"></script>
 <script src="駅.js"></script>
+<script src="自治体.js"></script>
 <script src="ニュース差分.js"></script>
 <script src="スクロール.js"></script>
 <script>
@@ -46,6 +48,12 @@ document.getElementById("t2").innerHTML = `${num}`
 mes();
 }
 
+function 事件(){
+num=16
+document.getElementById("t2").innerHTML = `${num}`
+mes();
+}
+
 </script>
 <style>
 #button{
@@ -53,7 +61,7 @@ width: 10em;
 height:5em;
 }
 #t1{
-font-size: 32px;
+font-size: 20px;
 color: white;
 -webkit-text-size-adjust: none;
 }

@@ -12,11 +12,37 @@ station();
 ]
 ペア乱数=Math.floor(Math.random() * ペア.length);
 
-消える=[
-`${お宝}を食べる宇宙人のしわざかも！`,
-`${お宝}かくしっていうオバケのしわざかも！`,
+お宝祭り=[
+`それにしても、${お宝}って便利だよね`,
+`こんな奇抜なイベント、誰が計画したんだろう...`,
 ]
-消える乱数=Math.floor(Math.random() * 消える.length);
+お宝祭り乱数=Math.floor(Math.random() * お宝祭り.length);
+
+ウォーキング=[
+`やっぱり${食べ物}って美味しいよね`,
+`とても疲れた`,
+]
+ウォーキング乱数=Math.floor(Math.random() * ウォーキング.length);
+
+行列=[
+`みんなが並んでるので並んだ`,
+`２０個は買うつもり`,
+`品切れにならないか心配`,
+]
+行列乱数=Math.floor(Math.random() * 行列.length);
+
+ライブ=[
+`水虫`,
+`便秘`,
+`ぎっくり腰`,
+]
+ライブ乱数=Math.floor(Math.random() * ライブ.length);
+
+自転車=[
+`${人物1}`,
+`${人物2}`,
+]
+自転車乱数=Math.floor(Math.random() * 自転車.length);
 
 水中=[
 `<font color="lightcoral ">10秒しか息が続かず</font>`,
