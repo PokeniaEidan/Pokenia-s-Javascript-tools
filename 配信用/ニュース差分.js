@@ -38,11 +38,11 @@ station();
 ]
 ライブ乱数=Math.floor(Math.random() * ライブ.length);
 
-自転車=[
-`${人物1}`,
-`${人物2}`,
+発狂=[
+`<font color="lightcoral ">録画していたドラマを一気に見たくなった</font>`,
+`<font color="lightcoral ">家に帰りたくなった</font>`,
 ]
-自転車乱数=Math.floor(Math.random() * 自転車.length);
+発狂乱数=Math.floor(Math.random() * 発狂.length);
 
 水中=[
 `<font color="lightcoral ">10秒しか息が続かず</font>`,

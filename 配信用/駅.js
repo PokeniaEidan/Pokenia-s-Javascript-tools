@@ -908,6 +908,8 @@ station();
 駅名=`<font color="springgreen">${首都圏[首都圏乱数]}駅</font>`
 駅名2=`<font color="springgreen">${首都圏[首都圏乱数2]}駅</font>`
 
+地名=`<font color="springgreen">${首都圏[首都圏乱数]}</font>`
+
 
 
 }
