@@ -14,7 +14,8 @@
 </div>
 
 <div id="t2"></div>
-<input type="button" value="button" onclick="mes()" id="button">
+<input type="button" value="もういちど" onclick="mes()" id="button">
+<input type="button" value="setInterval" onclick="interval()" id="button">
 
 
 
@@ -28,29 +29,38 @@
 <script src="スクロール.js"></script>
 <script>
 let num=0
+let id=null
 
 function mes(){
 main();
 document.getElementById("t1").innerHTML = `＜本時のニュース＞<br>${ニュース本文[num]}<br>`;
+window.clearInterval(id);
 }
 mes();
+
+function interval(){
+id=window.setInterval(mes,10000)
+}
 
 function プラス(){
 num++
 document.getElementById("t2").innerHTML = `${num}`
 mes();
+window.clearInterval(id);
 }
 
 function マイナス(){
 num--
 document.getElementById("t2").innerHTML = `${num}`
 mes();
+window.clearInterval(id);
 }
 
 function 事件(){
-num=16
+num=7
 document.getElementById("t2").innerHTML = `${num}`
 mes();
+window.clearInterval(id);
 }
 
 </script>
