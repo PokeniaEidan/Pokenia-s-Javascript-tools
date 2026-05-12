@@ -39,8 +39,7 @@ station();
 ライブ乱数=Math.floor(Math.random() * ライブ.length);
 
 発狂=[
-`<font color="lightcoral ">録画していたドラマを一気に見たくなった</font>`,
-`<font color="lightcoral ">家に帰りたくなった</font>`,
+`<font color="lightcoral "></font>`,
 ]
 発狂乱数=Math.floor(Math.random() * 発狂.length);
 
