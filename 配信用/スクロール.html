@@ -6,6 +6,7 @@
 </head>
 <body bgcolor="midnightblue ">
 <div id="t1"></div>
+<input type="button" value="もういちど" onclick="disp()" id="button">
 
 <script src="ボキャブラリー・食べ物.js"></script>
 <script src="ボキャブラリー・村.js"></script>
@@ -17,13 +18,21 @@
 <script src="スクロール.js"></script>
 <script>
 function disp(){
+
+let mes=``
+
+for (let i = 1; i < 5; i++){
 main();
 
-document.getElementById("t1").innerHTML =`${ニュース本文[ニュース乱数]}`
+mes+=`${ニュース本文[ニュース乱数]}<br><br>`
+
+}
+
+document.getElementById("t1").innerHTML =`${mes}`
+
 }
 
 disp();
-window.setInterval(disp,15000)
 
 </script>
 </body>
@@ -32,6 +41,10 @@ window.setInterval(disp,15000)
 font-size: 32px;
 color: white;
 -webkit-text-size-adjust: none;
+}
+#button{
+width: 10em;
+height:5em;
 }
 </style>
 </html>
