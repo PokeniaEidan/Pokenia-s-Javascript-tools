@@ -6,7 +6,6 @@
 </head>
 <body bgcolor="midnightblue ">
 <div id="t1"></div>
-<input type="button" value="もういちど" onclick="disp()" id="button">
 
 <script src="ボキャブラリー・食べ物.js"></script>
 <script src="ボキャブラリー・村.js"></script>
@@ -24,17 +23,15 @@ document.getElementById("t1").innerHTML =`${ニュース本文[ニュース乱�
 }
 
 disp();
+window.setInterval(disp,15000)
+
 </script>
 </body>
 <style>
 #t1{
-font-size: 32px;
+font-size: 20px;
 color: white;
 -webkit-text-size-adjust: none;
-}
-#button{
-width: 10em;
-height:5em;
 }
 </style>
 </html>
