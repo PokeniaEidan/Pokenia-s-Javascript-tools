@@ -1251,16 +1251,18 @@ if(関西[関西乱数]==関西[関西乱数2]){
 station();
 }
 
+
+
 駅名リスト=[
 [`<font color="springgreen">${首都圏[首都圏乱数]}駅</font>`,`<font color="springgreen">${首都圏[首都圏乱数2]}駅</font>`],
-[`<font color="paleturquoise ">${関西[関西乱数]}駅</font>`,`<font color="paleturquoise  ">${関西[関西乱数2]}駅</font>`],
+//[`<font color="paleturquoise ">${関西[関西乱数]}駅</font>`,`<font color="paleturquoise  ">${関西[関西乱数2]}駅</font>`],
 ]
 駅名乱数=Math.floor(Math.random()*駅名リスト.length);
 
-駅名=`<font color="springgreen">${駅名リスト[駅名乱数][0]}</font>`
-駅名2=`<font color="springgreen">${駅名リスト[駅名乱数][1]}</font>`
+駅名=`${駅名リスト[駅名乱数][0]}`
+駅名2=`${駅名リスト[駅名乱数][1]}`
 
-地名=`<font color="springgreen">${首都圏[首都圏乱数]}</font>`
+地名=`${駅名リスト[駅名乱数][0].slice(0,-8)}</font>`
 
 
 
