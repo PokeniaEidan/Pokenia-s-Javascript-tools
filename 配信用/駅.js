@@ -1252,10 +1252,9 @@ station();
 }
 
 
-
 駅名リスト=[
 [`<font color="springgreen">${首都圏[首都圏乱数]}駅</font>`,`<font color="springgreen">${首都圏[首都圏乱数2]}駅</font>`],
-//[`<font color="paleturquoise ">${関西[関西乱数]}駅</font>`,`<font color="paleturquoise  ">${関西[関西乱数2]}駅</font>`],
+[`<font color="paleturquoise ">${関西[関西乱数]}駅</font>`,`<font color="paleturquoise  ">${関西[関西乱数2]}駅</font>`],
 ]
 駅名乱数=Math.floor(Math.random()*駅名リスト.length);
 
