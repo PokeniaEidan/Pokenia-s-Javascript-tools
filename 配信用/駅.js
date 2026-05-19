@@ -893,6 +893,51 @@ function station(){
 `戸塚安行`,
 `浦和美園`,
 ]
+
+住居=首都圏.slice()
+住居.splice(0, 17)
+住居.splice(3,18)
+住居.splice(4,18)
+住居.splice(11,7)
+住居.splice(23,16)
+住居.splice(35,11)
+住居.splice(39,10)
+住居.splice(46,8)
+住居.splice(53,6)
+住居.splice(59,11)
+住居.splice(59,11)
+住居.splice(66,7)
+住居.splice(79,12)
+住居.splice(82,18)
+住居.splice(82,3)
+住居.splice(88,11)
+住居.splice(100,10)
+住居.splice(107,3)
+住居.splice(109,2)
+住居.splice(143,2)
+住居.splice(158,2)
+住居.splice(203,13)
+住居.splice(219,2)
+住居.splice(228,3)
+住居.splice(265,1)
+住居.splice(305,4)
+住居.splice(323,2)
+住居.splice(328,2)
+住居.splice(349,3)
+住居.splice(400,2)
+住居.splice(418,4)
+住居.splice(425,2)
+住居.splice(441,1)
+住居.splice(455,12)
+住居.splice(458,15)
+住居.splice(240,4)
+住居.splice(167,1)
+
+住居乱数=Math.floor(Math.random()*住居.length);
+住居=`<font color="springgreen">${住居[住居乱数]}駅</font>`
+
+首都圏.splice(461,4)
+
 首都圏乱数=Math.floor(Math.random()*首都圏.length);
 首都圏乱数2=Math.floor(Math.random()*首都圏.length);
 
@@ -905,8 +950,6 @@ station();
 駅名2=`<font color="springgreen">${首都圏[首都圏乱数2]}駅</font>`
 
 地名=`<font color="springgreen">${首都圏[首都圏乱数]}</font>`
-
-
 
 }
 

@@ -88,12 +88,35 @@ station();
 ドライブ2=`<font color="lightcoral ">${ドライブリスト[ドライブ乱数][1]}</font>`
 
 宝くじ=[
-`当たった人が羨ましい`,
-`１００枚も買ったのに、当たらなかった`,
-`運がなかっただけ、残念です`,
-`次もがんばりますよ！当たるまで買います`,
-`え？うそっ！当たってる！！`,
+`<font color="lightcoral ">当たった人が羨ましい</font>`,
+`<font color="lightcoral ">１００枚も買ったのに、当たらなかった</font>`,
+`<font color="lightcoral ">運がなかっただけ、残念です</font>`,
+`<font color="lightcoral ">次もがんばりますよ！当たるまで買います</font>`,
+`<font color="lightcoral ">え？うそっ！当たってる！！</font>`,
 ]
 宝くじ乱数=Math.floor(Math.random() * 宝くじ.length);
+
+空き部屋=[
+`<font color="lightcoral ">最近電気代高いわ～</font>`,
+`<font color="lightcoral ">トイレの水が流れない！</font>`,
+`<font color="lightcoral ">ちょっとタオル取って～</font>`,
+`<font color="lightcoral ">もやしが余っちゃったわ。どうしましょう</font>`,
+`<font color="lightcoral ">ちょっとティッシュ買ってきてー</font>`,
+]
+空き部屋乱数=Math.floor(Math.random() * 空き部屋.length);
+
+異臭=[
+`<font color="lightcoral ">しばらく、お風呂に入っていなかった</font>`,
+`<font color="lightcoral ">冷蔵庫の中の物が腐っていた</font>`,
+`<font color="lightcoral ">料理に何か混ぜたらとても臭いものになった</font>`,
+]
+異臭乱数=Math.floor(Math.random() * 異臭.length);
+
+騒音=[
+`<font color="lightcoral ">鼻に洗濯バサミを付けて寝て</font>`,
+`<font color="lightcoral ">鼻に栓を詰めて欲しい</font>`,
+`<font color="lightcoral ">顔を囲って欲しい</font>`,
+]
+騒音乱数=Math.floor(Math.random() * 騒音.length);
 
 }
