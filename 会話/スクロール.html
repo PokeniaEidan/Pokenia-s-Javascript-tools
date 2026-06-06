@@ -6,18 +6,12 @@
 </head>
 <body bgcolor="midnightblue ">
 <div id="t1"></div>
-<script src="ニュース.js"></script>
+<script src="状態処理.js"></script>
 <script>
-function disp(){
-main();
+状態処理();
 
-document.getElementById("t1").innerHTML =`${ニュース本文[ニュース乱数]}`
-}
+console.log(状態本文)
 
-disp();
-window.setInterval(disp,15000)
-
-localStorage.setItem("木", "多い");
 
 </script>
 </body>
