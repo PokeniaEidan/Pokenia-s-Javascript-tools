@@ -13,21 +13,8 @@
 </div>
 
 <div id="t2"></div>
-
-<div id="set">
-<input type="button" value="0" onclick="set0()" id="setbutton">
-<input type="button" value="10" onclick="set10()" id="setbutton">
-<input type="button" value="20" onclick="set20()" id="setbutton">
-<input type="button" value="30" onclick="set30()" id="setbutton">
-<input type="button" value="40" onclick="set40()" id="setbutton">
-<input type="button" value="50" onclick="set50()" id="setbutton">
-<input type="button" value="60" onclick="set60()" id="setbutton">
-<input type="button" value="70" onclick="set70()" id="setbutton">
-<input type="button" value="80" onclick="set80()" id="setbutton">
-<input type="button" value="90" onclick="set90()" id="setbutton">
-</div>
-
-
+<div id="t3"></div>
+<div id="t4"></div>
 
 <script src="ボキャブラリー・食べ物.js"></script>
 <script src="ボキャブラリー・村.js"></script>
@@ -38,91 +25,50 @@
 <script src="ニュース差分.js"></script>
 <script src="スクロール.js"></script>
 <script>
-let num=0
-let array=[]
+let num=null
+let array=null
+
+function arrayfunc(){
+num=0
+array=[]
 
 for (let i = 1; i < 102; i++){
 main();
 array.push(ニュース本文[ニュース乱数])
+mes();
 }
+
+}
+
+arrayfunc();
 
 function mes(){
 main();
 document.getElementById("t1").innerHTML = `＜本時のニュース＞<br>${array[num]}<br>`;
+
+if(num>100){
+document.getElementById("t4").innerHTML = `<input type="button" value="もういちど" onclick="arrayfunc()" id="button">`;
+}else{
+document.getElementById("t4").innerHTML = ``;
+}
+
 }
 mes();
 
 function プラス(){
 num++
-document.getElementById("t2").innerHTML = `${num}`
+document.getElementById("t3").innerHTML = `${num}`
 mes();
 }
 
 function マイナス(){
 num--
-document.getElementById("t2").innerHTML = `${num}`
+document.getElementById("t3").innerHTML = `${num}`
 mes();
 }
 
-function set0(){
-num=0
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
 
-function set10(){
-num=10
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
 
-function set20(){
-num=20
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
-
-function set30(){
-num=30
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
-
-function set40(){
-num=40
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
-
-function set50(){
-num=50
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
-
-function set60(){
-num=60
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
-
-function set70(){
-num=70
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
-
-function set80(){
-num=80
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
-
-function set90(){
-num=90
-document.getElementById("t2").innerHTML = `${num}`
-mes();
-}
 
 </script>
 <style>
@@ -136,6 +82,14 @@ color: white;
 -webkit-text-size-adjust: none;
 }
 #t2{
+-webkit-text-size-adjust: none;
+color: white;
+}  
+#t3{
+-webkit-text-size-adjust: none;
+color: white;
+}  
+#t4{
 -webkit-text-size-adjust: none;
 color: white;
 }  
