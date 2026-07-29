@@ -6,8 +6,9 @@ function 人物関数(){
 `坂上智代`,
 `伊吹風子`,
 ]
+人物乱数=Math.floor(Math.random() * 人物リスト.length);
 
-人物=`<font color="khaki ">小野かのこ</font>`
+人物=`<font color="khaki ">${人物リスト[人物乱数]}</font>`
 
 男性リスト=[
 `石破茂`,
