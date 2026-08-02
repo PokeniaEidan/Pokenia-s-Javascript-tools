@@ -5,6 +5,17 @@
 <title>Pokenia's Javascript Tools</title>
 </head>
 <body bgcolor="midnightblue ">
+<div id="t1"></div>
+
+<div id="count">
+<input type="button" value="-" onclick="マイナス()" id="button">
+<input type="button" value="+" onclick="プラス()" id="button">
+</div>
+
+<div id="t2"></div>
+<div id="t3"></div>
+<div id="t4"></div>
+
 <script src="ボキャブラリー・食べ物.js"></script>
 <script src="ボキャブラリー・村.js"></script>
 <script src="ボキャブラリー・人物.js"></script>
@@ -12,30 +23,76 @@
 <script src="ボキャブラリー・その他.js"></script>
 <script src="駅.js"></script>
 <script src="ニュース差分.js"></script>
-<script src="スクロール2.js"></script>
-<div class="scroll">
-<span class="mes1"></span>
-</div>
+<script src="スクロール.js"></script>
 <script>
-for (let i = 0 ; i < 128 ; i++){
-main();
+let num=null
+let array=null
 
-var element = document.getElementsByClassName("mes1");
-    element[0].innerHTML  += i +`<font color="ffffff">${ニュース本文[ニュース乱数]}　　　　　　　　　</font>`;
+function arrayfunc(){
+num=0
+array=[]
+
+for (let i = 1; i < 102; i++){
+main();
+array.push(ニュース本文[ニュース乱数])
+mes();
 }
+
+}
+
+arrayfunc();
+
+function mes(){
+main();
+document.getElementById("t1").innerHTML = `＜本時のニュース＞<br>${array[num]}<br>`;
+
+if(num>100){
+document.getElementById("t4").innerHTML = `<input type="button" value="もういちど" onclick="arrayfunc()" id="button">`;
+}else{
+document.getElementById("t4").innerHTML = ``;
+}
+
+}
+mes();
+
+function プラス(){
+num++
+document.getElementById("t3").innerHTML = `${num}`
+mes();
+}
+
+function マイナス(){
+num--
+document.getElementById("t3").innerHTML = `${num}`
+mes();
+}
+
+
+
+
 </script>
 <style>
-.scroll span{
-  display     : inline-block;
-    font-size: 64px;
-  padding-left: 100%;
-  white-space : nowrap;
-  line-height : 2em;
-  animation   : scrollAnime 3600s linear  ;
+#button{
+width: 10em;
+height:5em;
 }
-@keyframes scrollAnime{
-    0% { transform: translateX(0)}
-  100% { transform: translateX(-100%)}
+#t1{
+font-size: 32px;
+color: white;
+-webkit-text-size-adjust: none;
+}
+#t2{
+-webkit-text-size-adjust: none;
+color: white;
+}  
+#t3{
+-webkit-text-size-adjust: none;
+color: white;
+}  
+#t4{
+-webkit-text-size-adjust: none;
+color: white;
+}  
 </style>
 </body>
 </html>
