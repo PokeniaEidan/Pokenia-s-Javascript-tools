@@ -1,49 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
 <meta charset="UTF-8">
-<title>サンプル1</title>
- 
+<title>Pokenia's Javascript Tools</title>
 </head>
 <body bgcolor="midnightblue ">
-<body>
-<script src="ボキャブラリー.js"></script>
-<script src="ニュース.js"></script>
-<div class="scroll">
-  <span class="mes1"></span>
-</div>
+<div id="t1"></div>
 
 
 <script src="ボキャブラリー.js"></script>
 <script src="ニュース差分.js"></script>
 <script src="ニュース.js"></script>
 <script>
-for (let i = 0 ; i < 128 ; i++){
+function disp(){
 main();
 
-var element = document.getElementsByClassName("mes1");
-    element[0].innerHTML  += i +`<font color="limegreen  ">${ニュース本文[ニュース乱数]}　　　　　　　　　</font>`;
+document.getElementById("t1").innerHTML =`${ニュース本文[ニュース乱数]}`
 }
+
+disp();
+window.setInterval(disp,15000)
 </script>
-
-
-
-<style type="text/css">
-.scroll span{
-  display     : inline-block;
-    font-size: 64px;
-  padding-left: 100%;
-  white-space : nowrap;
-  line-height : 2em;
-  animation   : scrollAnime 2000s linear  ;
-}
-@keyframes scrollAnime{
-    0% { transform: translateX(0)}
-  100% { transform: translateX(-100%)}
-
-
-
-</style>
-
 </body>
+<style>
+#t1{
+font-size: 32px;
+color: white;
+-webkit-text-size-adjust: none;
+}
+</style>
 </html>
