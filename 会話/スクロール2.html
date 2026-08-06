@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Pokenia's Javascript Tools</title>
+</head>
+<body bgcolor="midnightblue ">
+<div id="t1"></div>
+
+<div id="count">
+<input type="button" value="-" onclick="マイナス()" id="button">
+<input type="button" value="+" onclick="プラス()" id="button">
+</div>
+
+<div id="t2"></div>
+<div id="t3"></div>
+<div id="t4"></div>
+
+<script src="ボキャブラリー.js"></script>
+<script src="ニュース差分.js"></script>
+<script src="ニュース.js"></script>
+<script>
+let num=null
+let array=null
+
+function arrayfunc(){
+num=0
+array=[]
+
+for (let i = 1; i < 102; i++){
+main();
+array.push(ニュース本文[ニュース乱数])
+mes();
+}
+
+}
+
+arrayfunc();
+
+function mes(){
+main();
+document.getElementById("t1").innerHTML = `${array[num]}<br>`;
+
+if(num>100){
+document.getElementById("t4").innerHTML = `<input type="button" value="もういちど" onclick="arrayfunc()" id="button">`;
+}else{
+document.getElementById("t4").innerHTML = ``;
+}
+
+}
+mes();
+
+function プラス(){
+num++
+document.getElementById("t3").innerHTML = `${num}`
+mes();
+}
+
+function マイナス(){
+num--
+document.getElementById("t3").innerHTML = `${num}`
+mes();
+}
+
+
+
+
+</script>
+<style>
+#button{
+width: 10em;
+height:5em;
+}
+#t1{
+font-size: 32px;
+color: white;
+-webkit-text-size-adjust: none;
+}
+#t2{
+-webkit-text-size-adjust: none;
+color: white;
+}  
+#t3{
+-webkit-text-size-adjust: none;
+color: white;
+}  
+#t4{
+-webkit-text-size-adjust: none;
+color: white;
+}  
+</style>
+</body>
+</html>

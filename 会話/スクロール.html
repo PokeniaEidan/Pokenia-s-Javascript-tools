@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Pokenia's Javascript Tools</title>
+</head>
+<body bgcolor="midnightblue ">
+<div id="t1"></div>
+<script src="https://cdn.jsdelivr.net/npm/croner@10/dist/croner.umd.min.js"></script>
+<script>
+const job = new Cron('*/5 * * * * *', () => {
+	console.log(Math.random());
+});
+
+</script>
+</body>
+<style>
+#t1{
+font-size: 32px;
+color: white;
+-webkit-text-size-adjust: none;
+}
+</style>
+</html>
