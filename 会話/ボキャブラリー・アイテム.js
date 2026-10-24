@@ -140,4 +140,5 @@ function アイテム関数(){
 お宝2=`<font color="orange ">${お宝リスト[お宝乱数2]}</font>`
 お宝3=`<font color="orange ">${お宝リスト[お宝乱数3]}</font>`
 
+
 }
