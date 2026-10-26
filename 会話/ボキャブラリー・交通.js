@@ -314,7 +314,7 @@ function 交通関数(){
 首都圏乱数2=Math.floor(Math.random()*首都圏.length);
 
 if(首都圏[首都圏乱数]==首都圏[首都圏乱数2]){
-station();
+交通関数();
 }
 
 
