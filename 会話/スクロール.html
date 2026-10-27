@@ -5,9 +5,7 @@
 <title>Pokenia's Javascript Tools</title>
 </head>
 <body bgcolor="midnightblue ">
-<div class="scroll">
-  <span class="mes1"></span>
-</div>
+<div id="t1"></div>
 <script src="ボキャブラリー・数字.js"></script>
 <script src="ボキャブラリー・その他.js"></script>
 <script src="ボキャブラリー・人物.js"></script>
@@ -19,32 +17,23 @@
 <script src="スクロール.js"></script>
 <script>
 
-for (let i = 0 ; i < 128 ; i++){
+function mes(){
 main();
-
-var element = document.getElementsByClassName("mes1");
-    element[0].innerHTML  += i +` <font color="ffffff">${ニュース本文[ニュース乱数]}　　　</font>`;
+document.getElementById("t1").innerHTML = `＜本時のニュース＞<br>${ニュース本文[ニュース乱数]}<br>`;
 }
+mes();
+window.setInterval(mes, 15000);
 
 </script>
 
 
 
 <style type="text/css">
-.scroll span{
-  display     : inline-block;
-    font-size: 64px;
-  padding-left: 100%;
-  white-space : nowrap;
-  line-height : 2em;
-  animation   : scrollAnime 1800s linear  ;
+#t1{
+font-size: 32px;
+color: white;
+-webkit-text-size-adjust: none;
 }
-@keyframes scrollAnime{
-    0% { transform: translateX(0)}
-  100% { transform: translateX(-100%)}
-
-
-
 </style>
 
 </body>
