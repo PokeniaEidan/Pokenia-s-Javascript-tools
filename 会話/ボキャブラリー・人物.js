@@ -5,12 +5,18 @@ function 人物関数(){
 `藤林杏`,
 `坂上智代`,
 `伊吹風子`,
-//
-`小野かのこ`,
 ]
 人物乱数=Math.floor(Math.random() * 人物リスト.length);
 
 人物=`<font color="khaki ">${人物リスト[人物乱数]}</font>`
+
+世界人物リスト=[
+`天城小次郎`,
+`法条まりな`,
+]
+世界人物乱数=Math.floor(Math.random() * 世界人物リスト.length);
+
+世界人物=`<font color="khaki ">${世界人物リスト[世界人物乱数]}</font>`
 
 男性リスト=[
 `石破茂`,
