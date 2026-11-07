@@ -16,19 +16,17 @@
 <script src="ニュース差分.js"></script>
 <script src="スクロール.js"></script>
 <script>
-
-function mes(){
+function disp(){
 main();
 document.getElementById("t1").innerHTML = `＜本時のニュース＞<br>${ニュース本文[ニュース乱数]}<br>`;
 }
-mes();
-window.setInterval(mes, 15000);
-
+disp();
+window.setInterval(disp, 15000);
 </script>
 
 
 
-<style type="text/css">
+<style>
 #t1{
 font-size: 32px;
 color: white;
