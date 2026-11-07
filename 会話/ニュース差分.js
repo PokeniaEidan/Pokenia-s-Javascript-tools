@@ -31,11 +31,5 @@ function ニュース差分(){
 空き部屋乱数=Math.floor(Math.random() * 空き部屋リスト.length);
 空き部屋=`<font color="deeppink">${空き部屋リスト[空き部屋乱数]}</font>`
 
-転勤リスト=[
-`${コミューター}`,
-`${主要都市}`,
-]
-転勤乱数=Math.floor(Math.random() * 転勤リスト.length);
-転勤=`<font color="deeppink">${転勤リスト[転勤乱数]}</font>`
 
 }
