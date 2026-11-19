@@ -30,8 +30,8 @@ function ニュース差分(){
 食べ物勝負=`<font color="deeppink">${食べ物勝負リスト[食べ物勝負乱数]}</font>`
 
 勝利=[
-`${男性}`,
-`${差分}`,
+`${ペア1}`,
+`${ペア2}`,
 ]
 勝利乱数=Math.floor(Math.random() * 勝利.length);
 
